@@ -48,11 +48,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--hover-color);
 }
-.header-list-link:hover {
-  color: var(--hover-color);
-}
-
-.header-list-link:focus {
+.header-list-link:hover, .header-list-link:focus {
   color: var(--hover-color);
 }
 
@@ -64,11 +60,7 @@ body {
   color: var(--main-text-color);
 }
 
-.header-contact:hover {
-  color: var(--hover-color);
-}
-
-.header-contact:focus {
+.header-contact:hover, .header-contact:focus {
   color: var(--hover-color);
 }
 
@@ -86,7 +78,7 @@ body {
   color: var(--white);
   cursor: pointer;
 }
-.button:hover {
+.button:hover, .button:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -104,15 +96,7 @@ body {
   color: var(--main-text-color);
   cursor: pointer;
 }
-.portfolio-button:hover {
-  background: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--white);
-}
-
-.portfolio-button:focus {
+.portfolio-button:hover, .portfolio-button:focus {
   background: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -221,7 +205,7 @@ body {
   line-height: calc(24 / 14);
   color: var(--white);
 }
-.footer-adres:hover {
+.footer-adres:hover, .footer-adres:focus {
   color: var(--hover-color);
 }
 .footer-contacts {
@@ -231,6 +215,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contacts:hover {
+.footer-contacts:hover, .footer-contacts:focus {
   color: var(--hover-color);
 }
