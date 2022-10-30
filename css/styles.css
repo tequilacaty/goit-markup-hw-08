@@ -27,6 +27,7 @@ body {
 .list {
   list-style: none;
   margin: 0;
+  padding-inline-start: 0px;
 }
 h1,
 h2,
@@ -38,6 +39,10 @@ p {
 
 .container {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* Хедер */
 
@@ -129,7 +134,6 @@ p {
   border-radius: 4px;
 }
 
-
 /* Основний контент */
 
 .main-title {
@@ -216,22 +220,21 @@ p {
   margin-left: 30px;
 }
 
-
 /* наша команда */
-.team-list{
+.team-list {
   display: flex;
   justify-content: center;
 }
 
-.team-item{
+.team-item {
   width: 270px;
   background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-
 }
-.team-item:not(:first-child){
+.team-item:not(:first-child) {
   margin-left: 30px;
 }
 .subtitle-three {
@@ -251,10 +254,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
-
-
-
 
 .team {
   background-color: #f5f4fa;
@@ -280,7 +279,7 @@ p {
   margin-bottom: 4px;
 }
 
-.portfolio-main .container .buttons-list{
+.portfolio-main .container .buttons-list {
   display: flex;
   justify-content: center;
 }
@@ -288,7 +287,7 @@ p {
 .buttons-list {
   margin-bottom: 50px;
 }
-.portfolio-button {
+.button-item {
   background: #f5f4fa;
   border-radius: 4px;
   border: transparent;
@@ -302,25 +301,35 @@ p {
   cursor: pointer;
   padding: 6px 22px;
 }
-.portfolio-button:hover,
-.portfolio-button:focus {
+.button-item:hover,
+.button-item:focus {
   background: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--white);
 }
-/* .portfolio-button:not(:first-child){
+.portfolio-buttom:not(:first-child) {
   margin-left: 8px;
-} */
-.project-item{
-  border: 1px solid #EEEEEE;
+}
+
+
+
+/* Список проектів */
+
+.projects-list .project-item {
   width: 370px;
+  border: 1px solid #eeeeee;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100%/3-30px);
 }
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .description {
@@ -340,7 +349,6 @@ p {
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
-  
 }
 .footer-adres {
   font-style: normal;
