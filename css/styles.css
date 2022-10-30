@@ -129,26 +129,7 @@ p {
   border-radius: 4px;
 }
 
-.portfolio-button {
-  background: #f5f4fa;
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  cursor: pointer;
-}
-.portfolio-button:hover,
-.portfolio-button:focus {
-  background: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--white);
-}
+
 /* Основний контент */
 
 .main-title {
@@ -202,6 +183,7 @@ p {
 
 .section-two .list-two {
   display: flex;
+  justify-content: center;
 }
 
 .list-item-two:not(:first-child) {
@@ -228,6 +210,7 @@ p {
 
 .work-list {
   display: flex;
+  justify-content: center;
 }
 .work-item:not(:first-child) {
   margin-left: 30px;
@@ -237,6 +220,7 @@ p {
 /* наша команда */
 .team-list{
   display: flex;
+  justify-content: center;
 }
 
 .team-item{
@@ -268,18 +252,9 @@ p {
   color: var(--text-color);
 }
 
-.portfolio-subtitle {
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-}
 
-.portfolio-text {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
+
+
 
 .team {
   background-color: #f5f4fa;
@@ -289,6 +264,67 @@ p {
 /* Портфоліо */
 .portfolio-main {
   padding: 94px 0px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.portfolio-subtitle {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio-main .container .buttons-list{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-list {
+  margin-bottom: 50px;
+}
+.portfolio-button {
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  cursor: pointer;
+  padding: 6px 22px;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background: var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--white);
+}
+/* .portfolio-button:not(:first-child){
+  margin-left: 8px;
+} */
+.project-item{
+  border: 1px solid #EEEEEE;
+  width: 370px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description {
+  padding: 20px 24px;
 }
 
 /* Футер */
