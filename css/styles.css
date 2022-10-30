@@ -38,8 +38,7 @@ h1, h2, h3, h4, p{
 /* Хедер */
 
 .header {
-  box-sizing: border-box;
-  border-bottom: 1px #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   padding: 24px 0px;
 }
 .header-list-item {}
@@ -92,6 +91,7 @@ h1, h2, h3, h4, p{
   letter-spacing: 0.06em;
   color: var(--white);
   cursor: pointer;
+  padding: 10px 32px;
 }
 .button:hover, .button:focus {
   background: #188ce8;
@@ -128,6 +128,8 @@ h1, h2, h3, h4, p{
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  width: 696px;
+  margin: 30px;
 }
 
 .main-block {
@@ -219,6 +221,13 @@ h1, h2, h3, h4, p{
   background-color: #F5F4FA;
   padding: 94px 0px;
 }
+
+/* Портфоліо */
+.portfolio-main {
+  padding: 94px 0px;
+}
+
+
 /* Футер */
 .footer {
   background-color: #2f303a;
