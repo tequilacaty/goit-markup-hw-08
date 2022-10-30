@@ -371,3 +371,10 @@ p {
 .footer-contacts:focus {
   color: var(--hover-color);
 }
+
+.addres-list {
+  margin-top: 20px;
+}
+.addres-item {
+  margin-bottom: 9px;
+}
