@@ -1,3 +1,4 @@
+/* Загальні */
 :root {
   --main-text-color: #212121;
   --hover-color: #2196f3;
@@ -25,10 +26,24 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+}
+h1, h2, h3, h4, p{
+  margin: 0;
 }
 
-.header-list-item {
+.conteiner{
+  width: 1200px;
 }
+/* Хедер */
+
+.header {
+  box-sizing: border-box;
+  border-bottom: 1px #ECECEC;
+  padding: 24px 0px;
+}
+.header-list-item {}
+
 .header-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -103,6 +118,7 @@ body {
   border-radius: 4px;
   color: var(--white);
 }
+/* Основний контент */
 
 .main-title {
   font-weight: 900;
@@ -123,6 +139,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  padding: 200px 0px;
+  margin-bottom: 94px;
 }
 
 .title {
@@ -130,7 +148,9 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
+
 
 /* прихований заголовок*/
 .visually-hidden {
@@ -147,6 +167,13 @@ body {
   overflow: hidden;
 }
 
+.section-two{
+  padding-bottom: 94px;
+}
+.list-two{
+  margin-bottom: 94px;
+}
+
 .subtitle-two {
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -157,6 +184,7 @@ body {
   line-height: calc(24 / 14);
   color: var(--text-color);
 }
+
 
 .subtitle-three {
   font-weight: 500;
@@ -187,6 +215,11 @@ body {
   color: var(--text-color);
 }
 
+.team{
+  background-color: #F5F4FA;
+  padding: 94px 0px;
+}
+/* Футер */
 .footer {
   background-color: #2f303a;
 }
