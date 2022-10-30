@@ -294,6 +294,7 @@ p {
 /* Футер */
 .footer {
   background-color: #2f303a;
+  padding: 60px 0px;
 }
 
 .footer-logo {
@@ -303,6 +304,7 @@ p {
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
+  
 }
 .footer-adres {
   font-style: normal;
