@@ -78,7 +78,7 @@ p {
   margin-left: auto;
 }
 
-.header-contact link {
+.contact-list {
   display: flex;
 }
 
@@ -105,6 +105,7 @@ p {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-left: 50px;
 }
 
 .header-contact:hover,
@@ -160,7 +161,6 @@ p {
   text-transform: uppercase;
   color: var(--white);
   padding: 200px 0px;
-  margin-bottom: 94px;
 }
 
 .title {
@@ -188,6 +188,8 @@ p {
 }
 
 .section-two .list-two {
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
   justify-content: center;
 }
@@ -199,25 +201,29 @@ p {
 .section-two {
   padding-bottom: 94px;
 }
-.list-two {
-  margin-bottom: 94px;
-}
 
 .subtitle-two {
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .text-two {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--text-color);
 }
+/* чим займаємось */
+
+.work {
+  padding-bottom: 94px;
+}
 
 .work-list {
   display: flex;
   justify-content: center;
 }
+
 .work-item:not(:first-child) {
   margin-left: 30px;
 }
@@ -228,13 +234,20 @@ p {
   justify-content: center;
 }
 
+.photo {
+  display: block;
+}
+.team-person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item {
   width: 270px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 .team-item:not(:first-child) {
   margin-left: 30px;
@@ -245,8 +258,6 @@ p {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .text-three {
@@ -281,14 +292,12 @@ p {
   margin-bottom: 4px;
 }
 
-.portfolio-main .container .buttons-list {
+.buttons-list {
   display: flex;
   justify-content: center;
-}
-
-.buttons-list {
   margin-bottom: 50px;
 }
+
 .button-item {
   background: #f5f4fa;
   border-radius: 4px;
@@ -303,6 +312,7 @@ p {
   cursor: pointer;
   padding: 6px 22px;
 }
+
 .button-item:hover,
 .button-item:focus {
   background: var(--hover-color);
@@ -315,27 +325,27 @@ p {
   margin-left: 8px;
 }
 
-
-
 /* Список проектів */
 
 .projects-list .project-item {
   width: 370px;
-  border: 1px solid #eeeeee;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc(100%/3-30px);
+
+  flex-basis: calc((100% - 60px) / 3);
 }
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -30px;
-  margin-left: -30px;
+  gap: 30px;
+  /* flex-basis: calc((100%-60px)/3); */
 }
 
 .description {
+  width: 370px;
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /* Футер */
@@ -351,6 +361,8 @@ p {
   font-size: 26px;
   line-height: 31px;
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 .footer-adres {
   font-style: normal;
@@ -374,9 +386,6 @@ p {
   color: var(--hover-color);
 }
 
-.addres-list {
-  margin-top: 20px;
-}
 .addres-item {
   margin-bottom: 9px;
 }
