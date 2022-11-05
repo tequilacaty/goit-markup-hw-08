@@ -226,6 +226,18 @@ p {
   line-height: calc(24 / 14);
   color: var(--text-color);
 }
+
+.pic-icons{
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+
 /* чим займаємось */
 
 .work {
