@@ -105,13 +105,29 @@ p {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--text-color);
   margin-left: 50px;
 }
 
-.header-contact:hover,
+.contact-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-mail{
+  margin-top: auto;
+}
+
+.header-contact:hover ,
 .header-contact:focus {
   color: var(--hover-color);
+}
+.header-icon{
+  fill: var(--text-color);
+  margin-right: 10px;  
+}
+.header-contact:hover .header-icon {
+  fill: var(--hover-color);
 }
 
 .button {
@@ -471,7 +487,7 @@ p {
   display: block;
   margin-bottom: 20px;
 }
-.footer-adres {
+.footer-address {
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -495,4 +511,30 @@ p {
 
 .addres-item {
   margin-bottom: 9px;
+}
+
+.footer-title{
+  align-items: center;
+  height: 31px;
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.footer-list{
+  display: flex;
+}
+
+.footer-list .address{
+  margin-right: 70px;
+}
+.footer-list .social-item{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-list .social-icon{
+  fill: var(--white);
 }
