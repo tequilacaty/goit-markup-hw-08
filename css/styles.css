@@ -106,13 +106,14 @@ p {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-left: 50px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
+  
 }
 .icon-mail {
   margin-top: auto;
