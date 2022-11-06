@@ -109,22 +109,22 @@ p {
   margin-left: 50px;
 }
 
-.contact-item{
+.contact-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.icon-mail{
+.icon-mail {
   margin-top: auto;
 }
 
-.header-contact:hover ,
+.header-contact:hover,
 .header-contact:focus {
   color: var(--hover-color);
 }
-.header-icon{
+.header-icon {
   fill: var(--text-color);
-  margin-right: 10px;  
+  margin-right: 10px;
 }
 .header-contact:hover .header-icon {
   fill: var(--hover-color);
@@ -172,15 +172,14 @@ p {
 .main-block {
   /* height: 600px; */
   background-color: #2f303a;
-  background-image:
-  linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
-  url(../images/main-bg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/main-bg.jpg);
   max-width: 1600px;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   font-weight: 900;
   font-size: 44px;
@@ -243,16 +242,15 @@ p {
   color: var(--text-color);
 }
 
-.pic-icons{
+.pic-icons {
   display: flex;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   border-radius: 4px;
   justify-content: center;
 }
-
 
 /* чим займаємось */
 
@@ -315,25 +313,25 @@ p {
   background-color: #f5f4fa;
   padding: 94px 0px;
 }
-.social-icons{
+.social-icons {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
-.social-item{
+.social-item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
   margin-right: 10px;
 }
-.social-item:last-child{
+.social-item:last-child {
   margin-right: 0px;
 }
 
-.social-item:hover{
+.social-item:hover {
   background-color: var(--hover-color);
 }
-.social-link{
+.social-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -341,11 +339,11 @@ p {
   justify-content: center;
 }
 
-.social-icon{
+.social-icon {
   fill: var(--text-color);
 }
 
-.social-link:hover .social-icon{
+.social-link:hover .social-icon {
   fill: var(--white);
 }
 
@@ -355,7 +353,7 @@ p {
   padding-bottom: 94px;
 }
 
-.customers-list{
+.customers-list {
   display: flex;
   justify-content: center;
 }
@@ -363,15 +361,15 @@ p {
 .customers-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: var(--white);
 }
-.customers-item:not(:last-child){
+.customers-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customers-link{
+.customers-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -383,10 +381,10 @@ p {
   fill: var(--text-color);
 }
 
-.customers-item:hover{
+.customers-item:hover {
   border-color: var(--hover-color);
 }
-.customers-link:hover .customer-icon{
+.customers-link:hover .customer-icon {
   fill: var(--hover-color);
 }
 
@@ -449,9 +447,10 @@ p {
   flex-basis: calc((100% - 60px) / 3);
 } */
 
-.project-item:hover, 
+.project-item:hover,
 .project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-list {
   display: flex;
@@ -460,8 +459,6 @@ p {
   gap: 30px;
   /* flex-basis: calc((100%-60px)/3); */
 }
-
-
 
 .description {
   width: 370px;
@@ -513,28 +510,28 @@ p {
   margin-bottom: 9px;
 }
 
-.footer-title{
-  align-items: center;
+.footer-title {
   height: 31px;
   font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--white);
   margin-bottom: 20px;
 }
 
-.footer-list{
+.footer-list {
   display: flex;
+  align-items: baseline;
 }
 
-.footer-list .address{
+.footer-list .address {
   margin-right: 70px;
 }
-.footer-list .social-item{
+.footer-list .social-item {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-list .social-icon{
+.footer-list .social-icon {
   fill: var(--white);
 }
