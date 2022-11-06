@@ -334,6 +334,11 @@ p {
 .social-item:hover {
   background-color: var(--hover-color);
 }
+
+.social-link:hover .social-icon {
+  fill: var(--white);
+}
+
 .social-link {
   width: 100%;
   height: 100%;
@@ -346,9 +351,7 @@ p {
   fill: var(--text-color);
 }
 
-.social-link:hover .social-icon {
-  fill: var(--white);
-}
+
 
 /* постійні клієнти */
 .customers {
@@ -502,8 +505,8 @@ p {
   line-height: calc(24 / 14);
   color: var(--white);
 }
-.footer-adres:hover,
-.footer-adres:focus {
+.footer-address:hover,
+.footer-address:focus {
   color: var(--hover-color);
 }
 .footer-contacts {
@@ -542,6 +545,10 @@ p {
 }
 .footer-list .social-item {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list .social-item:hover {
+  background-color: var(--hover-color);
 }
 .footer-list .social-icon {
   fill: var(--white);
