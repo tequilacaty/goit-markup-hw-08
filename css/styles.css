@@ -75,6 +75,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -96,6 +97,7 @@ p {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--hover-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
 .active-link::after{
@@ -107,6 +109,7 @@ p {
   position: absolute;
   bottom: -31px;
   left: 0;
+  display: block;
 }
 
 
@@ -124,6 +127,7 @@ p {
   letter-spacing: 0.02em;
   color: var(--text-color);
   margin-left: 50px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-item {
@@ -162,7 +166,9 @@ p {
   color: var(--white);
   cursor: pointer;
   padding: 10px 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button:hover,
 .button:focus {
   background: #188ce8;
@@ -360,6 +366,7 @@ p {
   border-radius: 50%;
   background-color: transparent;
   margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-item:last-child {
   margin-right: 0px;
@@ -379,6 +386,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -402,7 +410,9 @@ p {
   border: 1px solid var(--icons);
   border-radius: 4px;
   background-color: var(--white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .customers-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -413,6 +423,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon {
@@ -464,6 +475,7 @@ p {
   color: var(--main-text-color);
   cursor: pointer;
   padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-item:hover,
@@ -487,6 +499,7 @@ p {
 
 .project-link {
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover,
 .project-link:focus {
@@ -536,6 +549,7 @@ p {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--white);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:hover,
 .footer-address:focus {
@@ -546,6 +560,7 @@ p {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts:hover,
