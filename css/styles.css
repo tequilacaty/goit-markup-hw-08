@@ -74,6 +74,7 @@ p {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  position: relative;
 }
 
 .header-contacts {
@@ -89,13 +90,26 @@ p {
   color: inherit;
 }
 
-.active-link {
+/* .active-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--hover-color);
+} */
+
+.active-link::after{
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -31px;
+  left: 0;
 }
+
+
 .header-list-link:hover,
 .header-list-link:focus {
   color: var(--hover-color);
@@ -282,7 +296,7 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
