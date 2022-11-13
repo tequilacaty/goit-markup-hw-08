@@ -52,6 +52,7 @@ p {
   border-bottom: 1px solid #ececec;
   padding: 24px 0px;
 }
+
 .header-list-item:not(:first-child) {
   margin-left: 50px;
 }
@@ -93,7 +94,7 @@ p {
 }
 
 .active-link {
-  color: var(--hover-color)
+  color: var(--hover-color);
 }
 
 .active-link::after {
@@ -439,7 +440,7 @@ p {
 
 .portfolio-text {
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30/16);
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -502,17 +503,11 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* .project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  /* flex-basis: calc((100%-60px)/3); */
 }
 
 .description {
@@ -548,12 +543,9 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.project-link:hover .project-overflow{
+.project-link:hover .project-overflow {
   transform: translateY(0%);
 }
-
-
 
 /* Футер */
 .footer {
@@ -603,7 +595,7 @@ p {
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
@@ -627,4 +619,56 @@ p {
 }
 .footer-list .social-icon {
   fill: var(--white);
+}
+
+/* модальне вікно */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop.is-hidden .modal {
+  transform: rotate(-180deg);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: animate__bounceOut;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+  cursor: pointer;
+}
+
+.close-sign {
+  fill: #000000;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
