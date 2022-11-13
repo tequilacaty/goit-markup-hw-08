@@ -440,7 +440,7 @@ p {
 
 .portfolio-text {
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -646,7 +646,6 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  transition: animate__bounceOut;
 }
 
 .close-button {
