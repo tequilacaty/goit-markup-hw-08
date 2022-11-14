@@ -104,7 +104,7 @@ p {
   width: 100%;
   background: var(--hover-color);
   border-radius: 2px;
-  bottom: 1px;
+  bottom: 0px;
   left: 0;
   display: block;
 }
