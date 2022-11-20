@@ -401,13 +401,28 @@
 
 		<!-- модальне вікно -->
 		<div class="modal-backdrop is-hidden" data-modal>
-			<button class="modal">
-				<div class="close-button" data-modal-close>
+			<div class="modal">
+				<button class="close-button" data-modal-close>
 					<svg class="close-sign" width="11" height="11">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
+				</button>
+				<strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
+				<div class="modal-form">
+					<form name="user-data">
+						<label class="input-label" for="user-name">Ім'я</label>
+						<input class="input-item" name="user-name" id="user-name" type="text">
+						<label class="input-label" for="user-phone">Телефон</label>
+						<input class="input-item" name="user-phone" id="user-phone" type="text">
+						<label class="input-label" for="user-email">Пошта</label>
+						<input class="input-item" name="user-email" id="user-email" type="text">
+						<label class="input-label" for="user-coment">Коментар</label>
+						<textarea class="coment-item" name="user-coment" id="user-coment" placeholder="Введіть текст"></textarea>
+						<input class="agree" type="text">
+						<button class="button submit-button" type="submit">Відправити</button>
+					</form>
 				</div>
-			</button>
+			</div>
 		</div>
 		<script src="./js/modal.js"></script>
 	</body>
