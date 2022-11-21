@@ -440,9 +440,13 @@
 						<textarea class="coment-item" name="user-coment" id="user-coment" placeholder="Введіть текст"></textarea>
 
 						<div class="agreement">
-						<input class="user-agree" type="checkbox" value="agree" id="check-agreement" />
+						<input class="user-agree visually-hidden" type="checkbox" value="agree" id="check-agreement" />
 						<label class="check-label" for="check-agreement"
-							>Погоджуюся з розсилкою та приймаю <a class="agreement-link link" href="">Умови договору</a></label
+							>
+							<span class="check-wrapper">
+							<svg class="agree-icon" width="11" height="8">
+								<use href="./images/icons.svg#icon-check"></use>
+							</svg></span> Погоджуюся з розсилкою та приймаю <a class="agreement-link link" href="">Умови договору</a></label
 						>
 						</div>
 						<button class="button submit-button" type="submit">Відправити</button>
