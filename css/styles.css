@@ -609,15 +609,9 @@ button {
 .footer-list {
 	display: flex;
 	align-items: baseline;
+	justify-content: space-between;
 }
 
-.footer-list .address {
-	margin-right: 70px;
-}
-
-.social {
-	margin-right: 93px;
-}
 .footer-list .social-item {
 	background-color: rgba(255, 255, 255, 0.1);
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
