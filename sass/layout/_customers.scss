@@ -1,0 +1,43 @@
+/* постійні клієнти */
+.customers {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.customers-list {
+	display: flex;
+	justify-content: center;
+}
+
+.customers-item {
+	width: 170px;
+	height: 92px;
+	border: 1px solid $icons;
+	border-radius: 4px;
+	background-color: $white;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.customers-link {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer-icon {
+	fill: $icons;
+}
+
+.customers-item:hover {
+	border-color: $hoverColor;
+}
+.customers-link:hover .customer-icon {
+	fill: $hoverColor;
+}

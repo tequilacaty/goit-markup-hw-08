@@ -1,0 +1,20 @@
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.active-link {
+	color: $hoverColor;
+}
+
+.active-link::after {
+	position: absolute;
+	content: " ";
+	height: 4px;
+	width: 100%;
+	background: $hoverColor;
+	border-radius: 2px;
+	bottom: 0px;
+	left: 0;
+	display: block;
+}
