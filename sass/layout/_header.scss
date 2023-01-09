@@ -47,9 +47,10 @@
 	display: flex;
 }
 
-.header-list-link:hover,
-.header-list-link:focus {
+.header-list-link {
+	&:hover &:focus {
 	color: $hoverColor;
+	}
 }
 
 .header-contact {
@@ -73,9 +74,10 @@
 	margin-top: auto;
 }
 
-.header-contact:hover,
-.header-contact:focus {
+.header-contact {
+	&:hover, &:focus {
 	color: $hoverColor;
+	}
 }
 .header-icon {
 	fill: $textColor;
