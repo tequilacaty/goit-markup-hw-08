@@ -3,11 +3,11 @@
 	color: inherit;
 }
 
-.active-link {
+.header__link--active {
 	color: $hoverColor;
 }
 
-.active-link::after {
+.header__link--active::after {
 	position: absolute;
 	content: " ";
 	height: 4px;

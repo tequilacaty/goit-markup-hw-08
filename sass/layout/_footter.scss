@@ -3,7 +3,7 @@
 	padding: 60px 0px;
 }
 
-.footer-logo {
+.footer__logo {
 	color: $white;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -13,19 +13,19 @@
 	display: block;
 	margin-bottom: 20px;
 }
-.footer-address {
+.footer__address {
 	font-style: normal;
 	font-size: 14px;
 	line-height: calc(24 / 14);
 	color: $white;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-address {
+.footer__address {
 	&:hover, &:focus {
 	color: $hoverColor;
 	}
 }
-.footer-contacts {
+.footer__contacts {
 	font-style: normal;
 	font-size: 14px;
 	line-height: calc(24 / 14);
@@ -33,17 +33,17 @@
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts {
+.footer__contacts {
 	&:hover, &:focus {
 	color: $hoverColor;
 	}
 }
 
-.addres-item {
+.addres__item {
 	margin-bottom: 9px;
 }
 
-.footer-title {
+.footer__title {
 	display: inline-block;
 	font-weight: 700;
 	font-size: 14px;
@@ -54,25 +54,25 @@
 	margin-bottom: 20px;
 }
 
-.footer-list {
+.footer__list {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
 }
 
-.footer-list .social-item {
+.footer__list .social__item {
 	background-color: rgba(255, 255, 255, 0.1);
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list .social-item:hover {
+.footer__list .social__item:hover {
 	background-color: $hoverColor;
 }
-.footer-list .social-icon {
+.footer__list .social__icon {
 	fill: $white;
 }
 
-.email-form {
+.subscribe__email {
 	display: flex;
 }
 
@@ -101,12 +101,12 @@
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-button {
+.subscribe__button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.subscribe-icon {
+.subscribe__icon {
 	fill: $white;
 	margin-left: 10px;
 }
