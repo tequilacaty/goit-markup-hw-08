@@ -1,4 +1,9 @@
 /* чим займаємось */
+@media screen and (max-width: 767px) {
+	.work{
+		display: none;
+	}
+}
 
 .work {
 	padding-bottom: 94px;

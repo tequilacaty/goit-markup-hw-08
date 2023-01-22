@@ -26,11 +26,21 @@ button {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -616,20 +626,47 @@ button {
   padding-bottom: 94px;
 }
 
-.advantages__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
+@media screen and (min-width: 480px) {
+  .advantages__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-
-.advantages__item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: 270px;
+  }
+}
 .advantages__title {
   font-size: 14px;
   line-height: 1.1428571429;
@@ -643,6 +680,11 @@ button {
   color: var(--text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .advantages__text {
+    margin-bottom: 30px;
+  }
+}
 .advantages__icon {
   height: 120px;
   display: -webkit-box;
@@ -828,6 +870,11 @@ button {
 }
 
 /* чим займаємось */
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
+}
 .work {
   padding-bottom: 94px;
 }
