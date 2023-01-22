@@ -1,8 +1,5 @@
 /* наша команда */
-.team__list {
-	display: flex;
-	justify-content: center;
-}
+
 
 .photo {
 	display: block;
@@ -13,14 +10,44 @@
 }
 
 .team__item {
-	width: 270px;
 	background-color: $white;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
-.team__item:not(:first-child) {
-	margin-left: 30px;
+
+
+@media screen and (max-width: 767px) {
+	.team__item{
+		width: 450px;
+		margin-bottom: 30px;
+	}
 }
+
+@media screen and (min-width: 768px) {
+	.team__item{
+		width: 354px;
+	}
+	.team__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.team__item{
+		width: 270px;
+	}
+	.team__list {
+		display: flex;
+		justify-content: center;
+	}
+	// .team__item:not(:first-child) {
+	// 	margin-left: 30px;
+	// }
+}
+
 .person__subtitle {
 	font-weight: 500;
 	font-size: 16px;
