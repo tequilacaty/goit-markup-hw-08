@@ -547,7 +547,7 @@ button, button__menu {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px;
   background-color: #ffffff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -576,12 +576,16 @@ button, button__menu {
   list-style: none;
 }
 
-.mobile-menu {
+.mobile-menu .link {
   display: block;
-  padding: 10px;
+  color: #212121;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.mobile-menu__item .mobile-menu__item:hover {
+.mobile-menu__item:hover {
   color: #2196f3;
 }
 

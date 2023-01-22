@@ -54,7 +54,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 48px;
     background-color: $white;
     z-index: 999;
   
@@ -81,10 +81,10 @@
   
   .mobile-menu .link {
     display: block;
-    padding: 10px;
+    
     color: $mainTextColor;
     font-size: 40px;
-    line-height: calc(47-40);
+    line-height: calc(47/40);
     letter-spacing: 0.02em;
     text-decoration: none;
   }
@@ -92,3 +92,7 @@
   .mobile-menu__item:hover {
     color: $hoverColor;
   }
+
+.mobile-menu__contact{
+
+}
