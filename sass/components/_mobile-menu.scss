@@ -54,6 +54,9 @@
   
    
   .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -80,7 +83,6 @@
   
   .mobile-menu__list {
     padding: 0;
-    margin-bottom: 200px;
     
   }
   
@@ -102,7 +104,7 @@
 
 
 .mobile__contact{
-  margin-bottom: 20px;
+  
 }
 
 .mobile-contact__phone{
