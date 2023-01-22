@@ -506,8 +506,10 @@ button, button__menu {
   height: 40px;
 }
 
-.menu-toggle:hover + .mobile-menu__icon {
-  fill: #2196f3;
+.mobile__close-sign {
+  fill: #000000;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle {
@@ -531,16 +533,15 @@ button, button__menu {
   outline: none;
 }
 
+.menu-toggle:hover .mobile__close-sign {
+  fill: #2196f3;
+}
+
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -567,12 +568,12 @@ button, button__menu {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: red;
+  color: #212121;
 }
 
 .mobile-menu__list {
   padding: 0;
-  margin-bottom: 306px;
+  margin-bottom: 200px;
 }
 
 .mobile-menu__list {
@@ -596,7 +597,7 @@ button, button__menu {
   margin-bottom: 20px;
 }
 
-.mobile-contact__mail {
+.mobile-contact__phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
@@ -604,7 +605,7 @@ button, button__menu {
   color: #2196f3;
 }
 
-.mobile-contact__phone {
+.mobile-contact__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1666666667;
