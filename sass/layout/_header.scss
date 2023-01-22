@@ -117,6 +117,7 @@
 
 @media screen and (min-width: 1200px) {
 	.contact__list {
-		
+		display: flex;
+		flex-direction: row;
 	}
 }

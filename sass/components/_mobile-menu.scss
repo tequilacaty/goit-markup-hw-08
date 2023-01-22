@@ -39,6 +39,10 @@
     outline: none;
   }
   
+.menu-toggle:hover .mobile-menu__icon{
+  fill: $hoverColor;
+}
+
   .menu-toggle:hover .mobile__close-sign{
     fill: $hoverColor;
 }

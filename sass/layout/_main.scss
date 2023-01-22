@@ -1,20 +1,58 @@
 .main__title {
 	font-weight: 900;
-	font-size: 44px;
-	line-height: calc(60 / 44);
+	font-size: 26px;
+	line-height: calc(42 / 26);
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+
+	
 	color: $white;
-	width: 696px;
+	width: 360px;
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+
+	@media screen and (min-width: 768px) {
+		font-size: 26px;
+line-height: calc(42 / 26);
+	}
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: calc(60 / 44);
+		width: 696px;
+	}
 }
 
 .main__block {
 	background-color: #2f303a;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-bg.jpg);
+	// phone
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/new/main/Header\ img_mh@1x.jpg);
+	@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    	background-image : url(../images/new/main/Header\ img_mh@2x.jpg);
+  	}
+	
+	// tablet
+	@media screen and (min-width: 768px){
+		padding-top: 118px;
+		padding-bottom: 118px;	
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/new/main/Header\ img_tm@1x.jpg);
+	@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    	background-image: url(../images/new/main/Header\ img_tm@2x.jpg);
+  		}
+	}
+	
+	// screen
+	@media screen and (min-width: 1200px){
+		padding-top: 200px;
+		padding-bottom: 200px;	
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/new/main/Img_sch@1X.jpg);
+	@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    	background-image: url(../images/new/main/Img_sch@2X.jpg);
+  		}
+	}
+
+
 	max-width: 1600px;
 	background-size: cover;
 	background-position: center;
