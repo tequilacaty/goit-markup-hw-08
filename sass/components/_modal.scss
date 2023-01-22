@@ -12,9 +12,17 @@
 	transform: rotate(-180deg);
 }
 
+@media screen and (min-width: 1200px) {
+	.modal{
+	width: 528px;
+	}
+	.check-label{
+		font-size: 14px;
+	}
+}
 .modal {
 	position: absolute;
-	width: 528px;
+	width: 450px;
 	left: 50%;
 	top: 50%;
 	background: $white;
@@ -97,7 +105,7 @@
 .check-label {
 	display: inline-block;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
 	color: $mainTextColor;
@@ -172,7 +180,7 @@
 	width: 200px;
 }
 
-.close-sign:hover {
+.close-button:hover  .close-sign {
 	fill: $hoverColor;
 }
 

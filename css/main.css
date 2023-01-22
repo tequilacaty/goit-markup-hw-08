@@ -256,9 +256,17 @@ button {
           transform: rotate(-180deg);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .check-label {
+    font-size: 14px;
+  }
+}
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   left: 50%;
   top: 50%;
   background: #ffffff;
@@ -370,7 +378,7 @@ button {
 .check-label {
   display: inline-block;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #212121;
@@ -463,7 +471,7 @@ button {
   width: 200px;
 }
 
-.close-sign:hover {
+.close-button:hover .close-sign {
   fill: #2196f3;
 }
 
@@ -483,16 +491,6 @@ button {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .header__list {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__list {
-    display: none;
-  }
-}
 .header__page {
   border-bottom: 1px solid #ececec;
   padding: 24px 0px;
@@ -546,12 +544,6 @@ button {
   margin-left: auto;
 }
 
-.contact__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__link:hover .header__link:focus {
   color: #2196f3;
 }
@@ -560,9 +552,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -598,6 +587,36 @@ button {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+  .contact__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__item :first-child {
+    margin-bottom: 10px;
+  }
+  .header__contact {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .main__title {
   font-weight: 900;
   font-size: 44px;
