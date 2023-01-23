@@ -108,7 +108,7 @@
 .check-label {
 	display: inline-block;
 	font-weight: 400;
-	font-size: 8px;
+	font-size: 10px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
 	color: $mainTextColor;
@@ -118,18 +118,9 @@
 }
 
 .agreement-link {
-	position: relative;
 	color: $hoverColor;
 	margin-left: 5px;
-}
-.agreement-link::after {
-	position: absolute;
-	content: " ";
-	height: 1px;
-	width: 100%;
-	background: $hoverColor;
-	bottom: 7px;
-	left: 0;
+	border-bottom: 1px solid $hoverColor;
 }
 
 .input-wrapper {

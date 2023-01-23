@@ -389,7 +389,7 @@ img {
 .check-label {
   display: inline-block;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #212121;
@@ -401,19 +401,9 @@ img {
 }
 
 .agreement-link {
-  position: relative;
   color: #2196f3;
   margin-left: 5px;
-}
-
-.agreement-link::after {
-  position: absolute;
-  content: " ";
-  height: 1px;
-  width: 100%;
-  background: #2196f3;
-  bottom: 7px;
-  left: 0;
+  border-bottom: 1px solid #2196f3;
 }
 
 .input-wrapper {
