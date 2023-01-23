@@ -89,10 +89,14 @@
   .mobile-menu__list {
     display: block;
     color: $mainTextColor;
-    font-size: 40px;
+    font-size: 42px;
     line-height: calc(47 / 40);
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    @media screen and (min-width: 480px){
+      font-size: 40px;
+    }
   }
 
   .mobile-menu__item:not(:last-child){
@@ -103,16 +107,15 @@
   }
 
 
-.mobile__contact{
-  
-}
-
 .mobile-contact__phone{
 font-weight: 500;
 font-size: 34px;
 line-height: calc(40 / 34);
 letter-spacing: 0.02em;
 color: $hoverColor;
+@media screen and (min-width: 320px) and (max-width: 480px){
+  font-size: 26px;
+}
 }
 
 
@@ -134,11 +137,13 @@ color: $textColor;
   flex-wrap: nowrap;
   gap: 20px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: $hoverColor;
-
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .mobile-socials__link{
@@ -147,7 +152,7 @@ color: $textColor;
   // margin-right: 20px;
 }
 
-.mobile-socials__link::after{
+.mobile-socials__link :not(:last-child)::after {
   position: absolute;
   content: " ";
   width: 0.5px;

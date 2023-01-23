@@ -595,10 +595,15 @@ img {
 .mobile-menu__list {
   display: block;
   color: #212121;
-  font-size: 40px;
+  font-size: 42px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__list {
+    font-size: 40px;
+  }
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -615,6 +620,11 @@ img {
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-contact__phone {
+    font-size: 26px;
+  }
 }
 
 .mobile-contact__mail {
@@ -637,10 +647,15 @@ img {
       flex-wrap: nowrap;
   gap: 20px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-socials__list {
+    font-size: 18px;
+  }
 }
 
 .mobile-socials__link {
@@ -648,7 +663,7 @@ img {
   position: relative;
 }
 
-.mobile-socials__link::after {
+.mobile-socials__link :not(:last-child)::after {
   position: absolute;
   content: " ";
   width: 0.5px;
@@ -810,7 +825,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 360px;
+  width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -973,7 +988,7 @@ img {
 }
 
 .team__item {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1291,7 +1306,7 @@ img {
   display: flex;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1348,7 +1363,7 @@ img {
             align-items: center;
   }
   .input__mail {
-    width: 450px;
+    width: 300px;
     margin-bottom: 20px;
   }
 }
